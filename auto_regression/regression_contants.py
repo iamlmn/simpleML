@@ -1,4 +1,7 @@
 import yaml
+
+meta_job_info = dict()
+
 # Setup Environment constants
 setup = dict(train_size = 0.7, sampling = True, sample_estimator = None, categorical_features = None, categorical_imputation = 'constant', 
 	ordinal_features = None, high_cardinality_features = None, high_cardinality_method = 'frequency', numeric_features = None, 
@@ -11,6 +14,7 @@ setup = dict(train_size = 0.7, sampling = True, sample_estimator = None, categor
 	trigonometry_features = False, polynomial_threshold = 0.1, group_features = None, group_names = None, feature_selection = False, 
 	feature_selection_threshold = 0.8, feature_interaction = False, feature_ratio = False, interaction_threshold = 0.01, transform_target = False, 
 	session_id = None, silent=False, profile = False )
+
 
 with open('config.yml', 'w') as outfile:
     yaml.dump(setup, outfile, default_flow_style=False)
