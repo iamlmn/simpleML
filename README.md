@@ -16,13 +16,15 @@ Pickling model for re-use.
 
 
 Sample runs as of (28thMay2020)
-
+### Default configuration on Linear regression.
 ![](assets/regression/default_regression.gif)
+
+### Detailed configuration on Linear regression for customized preprocessing.
 ![](assets/regression/preprocessing.gif)
 
-![View sample HTML report on Boston data](assets/regression/regression.html)
+<!-- ![View sample HTML report on Boston data](assets/regression/regression.html) -->
 
-## Install & run
+### Install & run
 ```
 git clone https://github.com/iamlmn/simpleML.git
 cd simpleML
