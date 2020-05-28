@@ -1,0 +1,8 @@
+pandas
+Scikit-learn
+pycaret
+numpy
+Scipy
+PyInquirer
+termcolor
+pyfiglet

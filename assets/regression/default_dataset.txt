@@ -1,0 +1,13 @@
+Dataset	Data Types	Default Task	Target Variable	# Instances	# Attributes
+automobile	Multivariate	Regression	price	202	26
+bike	Multivariate	Regression	cnt	17379	15
+boston	Multivariate	Regression	medv	506	14
+concrete	Multivariate	Regression	strength	1030	9
+diamond	Multivariate	Regression	Price	6000	8
+energy	Multivariate	Regression	Heating Load / Cooling Load	768	10
+forest	Multivariate	Regression	area	517	13
+gold	Multivariate	Regression	Gold_T+22	2558	121
+house	Multivariate	Regression	SalePrice	1461	81
+insurance	Multivariate	Regression	charges	1338	7
+parkinsons	Multivariate	Regression	PPE	5875	22
+traffic	Multivariate	Regression	traffic_volume	48204	8
