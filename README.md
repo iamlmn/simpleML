@@ -17,9 +17,10 @@ Pickling model for re-use.
 
 Sample runs as of (28thMay2020)
 
-![](assets/regression/default_regression.gif.gif)
+![](assets/regression/default_regression.gif)
 ![](assets/regression/preprocessing.gif)
 
+![View sample HTML report on Boston data](assets/regression/regression.html)
 
 ## Install & run
 ```
