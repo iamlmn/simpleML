@@ -6,3 +6,4 @@ Scipy
 PyInquirer
 termcolor
 pyfiglet
+notebook

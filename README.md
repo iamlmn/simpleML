@@ -28,6 +28,7 @@ Sample runs as of (28thMay2020)
 ```
 git clone https://github.com/iamlmn/simpleML.git
 cd simpleML
+pip install requirements.txt
 python3 auto_regression/main.py
 ```
 
