@@ -1,20 +1,30 @@
-# simpleML
+# simpleML 
 :soon:
-Simple ML is python based machcine learning tool wrapped over PyCaret.
 
-Aim is to attain no code ML training while still having the ability to use multiple technique/model/paramets has been used with just few clicks with neat HTML reports(transperancy and) with plots and reduce the hypothesis to insights cycle time in a ML experiment
-Altough a lot of cloud providers provide this option and sometimes it may not be worth using it, and even costlier. 
-Currently we can run linear regression from command line.. It provides interactive terminal to configure your machine learning pipelines.
-The algirhtm part is still on a jupyter notebook which can be changes as requirred easily and we can use the existing framework still. 
+Simple ML is command-line utility written python based machcine learning framework wrapped over existing ML libraries.
+
+Aim is to attain no code ML training while still having the ability to use multiple(all) technique/model/parameters with just few clicks and output neat HTML reports(transperancy on data and models/analysis) with plots and data analysis report which can be helpful in reducing the hypothesis to insights cycle time in a ML experiment
+
+Altough a lot of cloud providers provide this option and sometimes it may not be worth using it, and even costlier.  While It's simpler over CLI.
+
+Currently we can run linear regression & Binary classification from command line. It provides interactive terminal to configure your machine learning pipelines and preprocessing steps.
+
+The analysis part run on a jupyter notebook which can be changed as required easily and we can still use the existing framework to provide the reports and CLI configurations. 
 
 
-## Linear Regression 
-Regression Module is a supervised machine learning module that is used for estimating the relationships between a dependent variable (often called the ‘outcome variable’, or ‘target’) and one or more independent variables (often called ‘features’, ‘predictors’, or ‘covariates’). The objective of regression is to predict continuous values such as predicting sales amount, predicting quantity, predicting temperature etc. This module provides several pre-processing features that prepare the data for modeling through setup function. It has over 25 ready-to-use algorithms and several plots to analyze the performance of trained models.
+## Linear Regression :octocat:
+Regression Module is a supervised machine learning module that is used for estimating the relationships between a dependent variable (often called the ‘outcome variable’, or ‘target’) and one or more independent variables (often called ‘features’, ‘predictors’, or ‘covariates’). The objective of regression is to predict continuous values such as predicting sales amount, predicting quantity, predicting temperature etc. This supports several pre-processing features that prepare the data for modeling through CLI clicks. It has over 25 ready-to-use algorithms and several plots to analyze the performance of trained models.
 > Option to run on default configuration (need docs but can refer to PyCaret docs for now).  
 
 > Provides preprocessing configuration for EDA & making data ready.
 
-> Runs 25 Linear regression and comapres the R2,MAE,MAPE,RMSE merics and provides the best model, but still users have an option to override and run their model of interest.
+> Supports comparing 25 Linear regression results based on below 
+ - R2
+ - MAE
+ - MAPE
+ - RMSE 
+
+  merics and provides the best model, but still users have an option to override and run their model of interest.
 
 > Option for auto hyperparameter tuning based on random grid search.
 
@@ -31,7 +41,7 @@ Regression Module is a supervised machine learning module that is used for estim
 > Pickling model for re-use.
 
 
-## Classification
+## Classification :octocat:
 Classification Module is a supervised machine learning module which is used for classifying elements into groups. The goal is to predict the categorical class labels which are discrete and unordered. Some common use cases include predicting customer default (Yes or No), predicting customer churn (customer will leave or stay), disease found (positive or negative). This module can be used for binary and provides several pre-processing features that prepare the data for modeling through CLI. It has over 18 ready-to-use algorithms and several plots to analyze the performance of trained models.
 
 > Option to run on customized preprocessing configurations (docs :soon:).  
@@ -49,7 +59,7 @@ Classification Module is a supervised machine learning module which is used for 
 
 > Option for auto tune hyperparameters based on random grid search.
 
-> Creates a details HTML report with 
+> Creates a details HTML report with below plots
 - Area Under the Curve
 - Discrimination Threshold
 - Precision Recall Curve
@@ -72,7 +82,7 @@ Classification Module is a supervised machine learning module which is used for 
 
 
 
-<h2>Sample demos as of (30thMay2020)</h2>
+<h2>Sample demos as of (30thMay2020) - <a href="https://iamlmn.github.io/simpleML/">View here</a>></h2>
 <h5> Configuring Linear regression with default configuration on boston dataset</h5> 
 <!-- ![](assets/regression/default_regression.gif) -->
 <video width="320" height="240" controls>
@@ -106,13 +116,11 @@ Classification Module is a supervised machine learning module which is used for 
 
 
 
-
-
 ### Install & run
 ```
 git clone https://github.com/iamlmn/simpleML.git
 cd simpleML
-pip install requirements.txt
+pip install -r requirements.txt
 python3 auto_regression/main.py
 ```
 
@@ -129,4 +137,5 @@ TODOs and Planned work :
 - [ ] Documentation
 
 
-Contributions and ideas are welcome.
+## Contributions and ideas are welcome.
+
