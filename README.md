@@ -3,6 +3,8 @@
 
 Simple ML is command-line utility written python based machcine learning framework wrapped over existing ML libraries.
 
+![](assets/cli_usage.png?raw=true)
+
 Aim is to attain no code ML training while still having the ability to use multiple(all) technique/model/parameters with just few clicks and output neat HTML reports(transperancy on data and models/analysis) with plots and data analysis report which can be helpful in reducing the hypothesis to insights cycle time in a ML experiment
 
 Altough a lot of cloud providers provide this option and sometimes it may not be worth using it, and even costlier.  While It's simpler over CLI.
