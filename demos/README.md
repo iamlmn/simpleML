@@ -6,24 +6,7 @@
 </video>
 
 <h5>Configuring Linear regression with customized preprocessing</h5>
-<!-- ![](assets/regression/preprocessing.gif) -->
-
-<video width="320" height="240" controls>
-  <source src="../assets/video.mov" type="video/mp4">
-</video>
+![](assets/regression/preprocessing.gif)
 
 <h5>Configuring Binarry Classification with default preprocessing configurations on Credir card dataset </h5>
-<!-- ![](assets/regression/preprocessing.gif) -->
-
-<video width="320" height="240" controls>
-  <source src="../assets/bc-cli.mov" type="video/mp4">
-</video>
-
-
-<h5>Configuring Binarry Classification with default preprocessing configurations on Credir card dataset </h5>
-<!-- ![](assets/regression/preprocessing.gif) -->
-
-<video width="320" height="240" controls>
-  <source src="../assets/bc-cli.mov" type="video/mp4">
-</video>
-
+![](assets/regression/preprocessing.gif)
