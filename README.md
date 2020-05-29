@@ -25,9 +25,7 @@ Regression Module is a supervised machine learning module that is used for estim
  - R2
  - MAE
  - MAPE
- - RMSE 
-
-  merics and provides the best model, but still users have an option to override and run their model of interest.
+ - RMSE metrics and provides the best model, but still users have an option to override and run their model of interest.
 
 > Option for auto hyperparameter tuning based on random grid search.
 
