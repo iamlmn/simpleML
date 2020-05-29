@@ -42,11 +42,21 @@ if __name__ == '__main__':
     if setup_answers['custom_setup'] == False:
         setup_answers = dict(**default_values.default_setup_answers, **setup_answers)
 
-    modelling_answers = prompt(
-        regression_icli.modelling_questions,
-        style=style)
-    modelling_answers = dict(**default_values.default_modelling_answers, **modelling_answers)
+    if general_answers['analysis_type'] == 'LinearRegression':
+        regression_answers = prompt(
+            regression_icli.regression_questions,
+            style=style)
+        modelling_answers = dict(**default_values.default_regression_answers, **regression_answers)
+        _ipynb_filename = 'regression.ipynb'
 
+    elif general_answers['analysis_type'] == 'BinaryClassification':
+        classifications_answers = prompt(
+            regression_icli.classifications_questions,
+            style=style)
+        modelling_answers = dict(**default_values.default_classification_answers, **classifications_answers)
+        _ipynb_filename = 'Classification_dev.ipynb'
+
+    
     # concaenate answers
     answers = {**general_answers, **setup_answers, **modelling_answers}
     if answers['view_config']:
@@ -62,9 +72,10 @@ if __name__ == '__main__':
         # Start regression
         if answers_modeling['StartModelling']:
             try:
-                run_regression.run_notebook(sys.argv)
+                run_regression.run_notebook(sys.argv, _ipynb_filename, default_cell_timeout = 600)
             except Exception as e:
                 rasie(e)
+
 
         print(colored('Completed job...', 'green'))
         sys.exit(0)

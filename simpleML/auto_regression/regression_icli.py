@@ -15,6 +15,15 @@ general_questions = [
     },
 
     {
+        'type': 'list',
+        'name': 'analysis_type',
+        'message': 'Select analysis type',
+        # 'when': lambda setup_answers: setup_answers['demo_run'] == True,
+        'choices': ['LinearRegression', 'BinaryClassification', 'Clustering']
+    },
+
+
+    {
         'type': 'confirm',
         'name': 'demo_run',
         'message': 'Run a demo data?',
@@ -25,8 +34,16 @@ general_questions = [
         'type': 'list',
         'name': 'demo_dataset',
         'message': 'Select any of the demo dataset',
-        'when': lambda setup_answers: setup_answers['demo_run'] == True,
+        'when': lambda setup_answers: setup_answers['demo_run'] == True and  setup_answers['analysis_type'] == 'LinearRegression',
         'choices': ['boston', 'parkinsons', 'traffic', 'house', 'gold', 'forest', 'bike']
+    },
+
+     {
+        'type': 'list',
+        'name': 'demo_dataset',
+        'message': 'Select any of the demo dataset',
+        'when': lambda setup_answers: setup_answers['demo_run'] == True and  setup_answers['analysis_type'] == 'BinaryClassification',
+        'choices': ['credit', 'blood', 'cancer', 'diabetes', 'heart', 'heart_disease', 'hepatitis','parkinsons']
     },
 
     {
@@ -416,7 +433,7 @@ setup_questions = [
         'message': 'profile: bool, default = True',
         'default': True
     }]
-modelling_questions = [
+regression_questions = [
 
     {
         'type': 'list',
@@ -433,7 +450,7 @@ modelling_questions = [
         'type': 'list',
         'name': 'auto_select_best_model_by',
         'message': 'auto_select_best_model_by ',
-        'when': lambda modelling_answers: modelling_answers['user_selected_model'] == 'Auto select best model',
+        'when': lambda modelling_answers: regression_answers['user_selected_model'] == 'Auto select best model',
         'choices': ['MAE', 'MSE', 'RMSE', 'R2', 'RMSLE', 'MAPE']
 
     },
@@ -474,3 +491,70 @@ status = [
         'default': True
     }
 ]
+
+
+classifications_questions = [
+
+    {
+        'type': 'list',
+        'name': 'user_selected_model',
+        'message': 'Select model of interest  : default = auto_select_best_model ',
+        'choices': ['Auto select best model', 'Logistic Regression', 'K Nearest Neighbour', 'Naives Bayes', 'Decision Tree', 
+        'SVM (Linear)', 'SVM (RBF)', 'Gaussian Process', 'Multi Level Perceptron', 'Ridge Classifier', 'Random Forest', 
+        'Quadratic Disc. Analysis', 'AdaBoost', 'Gradient Boosting Classifier', 'Linear Disc. Analysis', 'Extra Trees Classifier', 
+        'Extreme Gradient Boosting', 'Light Gradient Boosting', 'Cat Boost Classifier']
+
+    },
+    {
+        'type': 'list',
+        'name': 'auto_select_best_model_by',
+        'message': 'auto_select_best_model_by ',
+        'when': lambda classifications_answers: classifications_answers['user_selected_model'] == 'Auto select best model',
+        'choices': ['Accuracy', 'AUC', 'Recall', 'Precision', 'F1', 'Kappa']
+    },
+
+    {
+        'type': 'confirm',
+        'name': 'auto_tune',
+        'message': 'Auto tune hyperparameters with random grid search?',
+        'default': True
+
+    },
+        {
+        'type': 'confirm',
+        'name': 'ensemble',
+        'message': 'Enable Ensemble model',
+        'default': False
+
+    },
+    
+    {
+        'type': 'input',
+        'name': 'train_size',
+        'message': 'Training set size?',
+        'default': '0.7'
+    },
+
+    {
+        'type': 'input',
+        'name': 'Kfolds',
+        'message': 'K-fold CV: integer',
+        'validate': KfoldsValidator,
+        'filter': lambda val: int(val)
+    },
+    {
+        'type': 'confirm',
+        'name': 'view_config',
+        'message': 'view configurations?',
+        'default': False
+    }
+]
+status = [
+    {
+        'type': 'confirm',
+        'name': 'cli_summary',
+        'message': 'High level summary?',
+        'default': True
+    }
+]
+

@@ -7,13 +7,13 @@ IPYNB_FILENAME = 'regression.ipynb'
 CONFIG_FILENAME = '.config_ipynb'
 
 
-def run_notebook(argv, default_cell_timeout=300):
+def run_notebook(argv, ipynb_filename, default_cell_timeout=600):
     with open(CONFIG_FILENAME, 'w') as f:
         f.write(' '.join(argv))
-
+    print("Starting {}".format(ipynb_filename))
     os.system(
         'jupyter nbconvert --execute {:s} --to html --TemplateExporter.exclude_input=True --ExecutePreprocessor.timeout={}'.format(
-            IPYNB_FILENAME,
+            ipynb_filename,
             default_cell_timeout))
 
     return None

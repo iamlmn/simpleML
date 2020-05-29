@@ -1,0 +1,15 @@
+bank	Multivariate	Classification (Binary)	deposit	45211	17
+blood	Multivariate	Classification (Binary)	Class	748	5
+cancer	Multivariate	Classification (Binary)	Class	683	10
+credit	Multivariate	Classification (Binary)	default	24000	24
+diabetes	Multivariate	Classification (Binary)	Class variable	768	9
+electrical_grid	Multivariate	Classification (Binary)	stabf	10000	14
+employee	Multivariate	Classification (Binary)	left	14999	10
+heart	Multivariate	Classification (Binary)	DEATH	200	16
+heart_disease	Multivariate	Classification (Binary)	Disease	270	14
+hepatitis	Multivariate	Classification (Binary)	Class	154	32
+income	Multivariate	Classification (Binary)	income >50K	32561	14
+juice	Multivariate	Classification (Binary)	Purchase	1070	15
+nba	Multivariate	Classification (Binary)	TARGET_5Yrs	1340	21
+wine	Multivariate	Classification (Binary)	type	6498	13
+telescope	Multivariate	Classification (Binary)	Class	19020	11
