@@ -86,28 +86,27 @@ Classification Module is a supervised machine learning module which is used for 
 
 
 <h2>Sample demos as of (30thMay2020) - <a href="https://iamlmn.github.io/simpleML/">View here</a>></h2>
-<h5> Configuring Linear regression with default configuration on boston dataset</h5> 
+<h5> Creating Linear regression with default configuration on boston dataset</h5> 
 <!-- ![](assets/regression/default_regression.gif) -->
 <video width="320" height="240" controls>
   <source src="assets/lr-all.mp4" type="video/mp4">
 </video>
 
-<h5>Configuring Linear regression with customized preprocessing</h5>
+<h5>Creating Linear regression model with customized preprocessing configurations</h5>
 <!-- ![](assets/regression/preprocessing.gif) -->
 
 <video width="320" height="240" controls>
   <source src="assets/video.mov" type="video/mp4">
 </video>
 
-<h5>Configuring Binarry Classification with default preprocessing configurations on Credir card dataset </h5>
+<h5>Creating Binary Classification model with default preprocessing configurations on credit card dataset </h5>
 <!-- ![](assets/regression/preprocessing.gif) -->
 
 <video width="320" height="240" controls>
   <source src="assets/Classification.mov" type="video/mp4">
 </video>
 
-
-<h5>Configuring Binarry Classification with default preprocessing configurations on Credir card dataset </h5>
+<h5>Creating Binary Classification with default preprocessing configurations on credit card dataset </h5>
 <!-- ![](assets/regression/preprocessing.gif) -->
 
 <video width="320" height="240" controls>
