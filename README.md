@@ -1,7 +1,7 @@
 # simpleML 
 :soon:
 
-Simple ML is command-line machcine learning utility written in Python3.7 wrapped over existing ML libraries.
+Simple ML is command-line machine learning utility written in Python3.7 wrapped over existing ML libraries.
 
 ![](assets/cli_usage.png?raw=true)
 
