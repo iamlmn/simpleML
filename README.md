@@ -12,9 +12,10 @@ Currently we can run linear regression & Binary classification from command line
 The analysis part run on a jupyter notebook which can be changed as required easily and we can still use the existing framework to provide the reports and CLI configurations. 
 
 
+
 ## Linear Regression :octocat:
-Regression Module is a supervised machine learning module that is used for estimating the relationships between a dependent variable (often called the ‘outcome variable’, or ‘target’) and one or more independent variables (often called ‘features’, ‘predictors’, or ‘covariates’). The objective of regression is to predict continuous values such as predicting sales amount, predicting quantity, predicting temperature etc. This supports several pre-processing features that prepare the data for modeling through CLI clicks. It has over 25 ready-to-use algorithms and several plots to analyze the performance of trained models.
-> Option to run on default configuration (need docs but can refer to PyCaret docs for now).  
+Regression Module is a supervised machine learning module that is used for estimating the relationships between a dependent variable (often called the ‘outcome variable’, or ‘target’) and one or more independent variables (often called ‘features’, ‘predictors’, or ‘covariates’). The objective of regression is to predict continuous values such as predicting sales amount, predicting quantity, predicting temperature etc. This supports several pre-processing features that prepare the data for modeling through CLI just by clicking. It has over 25 ready-to-use algorithms and several plots to analyze the performance of trained models.
+> Option to run on default configuration (docs :soon:).  
 
 > Provides preprocessing configuration for EDA & making data ready.
 
@@ -116,7 +117,7 @@ Classification Module is a supervised machine learning module which is used for 
 
 
 
-### Install & run
+### Install & run 
 ```
 git clone https://github.com/iamlmn/simpleML.git
 cd simpleML
@@ -134,6 +135,9 @@ TODOs and Planned work :
 - [ ] HTML report remediation
 - [ ] Dockerization
 - [ ] Convert it to an executable
+- [ ] Documentation
+- [ ] Support different file types
+- [ ] Unit tests
 - [ ] Documentation
 
 
