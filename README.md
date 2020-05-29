@@ -94,7 +94,7 @@ Classification Module is a supervised machine learning module which is used for 
 <!-- ![](assets/regression/preprocessing.gif) -->
 
 <video width="320" height="240" controls>
-  <source src="assets/video.mov" type="video/mp4">
+  <source src="assets/preprocessing.mp4" type="video/mp4">
 </video>
 
 <h5>Creating Binary Classification model with default preprocessing configurations on credit card dataset </h5>
