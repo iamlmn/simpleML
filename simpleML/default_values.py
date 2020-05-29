@@ -73,4 +73,6 @@ default_setup_answers = {'sampling': False,
 			  'silent': True}
 
 
-default_modelling_answers = {}
+default_regression_answers = {}
+
+default_classification_answers = {}

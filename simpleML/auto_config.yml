@@ -1,5 +1,5 @@
 Kfolds: 10
-analysis_name: my-classification
+analysis_name: my-regression
 analysis_type: BinaryClassification
 auto_select_best_model_by: Accuracy
 auto_tune: true
@@ -11,7 +11,7 @@ combine_rare_levels: false
 create_clusters: false
 custom_setup: false
 date_features: null
-demo_dataset: credit
+demo_dataset: blood
 demo_run: true
 ensemble: false
 feature_interaction: false
