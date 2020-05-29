@@ -7,3 +7,4 @@ PyInquirer
 termcolor
 pyfiglet
 notebook
+docopt

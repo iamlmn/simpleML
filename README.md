@@ -1,11 +1,11 @@
 # simpleML 
 :soon:
 
-Simple ML is command-line utility written python based machcine learning framework wrapped over existing ML libraries.
+Simple ML is command-line machcine learning utility written in Python3.7 wrapped over existing ML libraries.
 
 ![](assets/cli_usage.png?raw=true)
 
-Aim is to attain no code ML training while still having the ability to use multiple(all) technique/model/parameters with just few clicks and output neat HTML reports(transperancy on data and models/analysis) with plots and data analysis report which can be helpful in reducing the hypothesis to insights cycle time in a ML experiment
+Aim is to attain no-code ML training while still having the ability to use multiple(all) technique/model/parameters with just few clicks and output neat HTML reports(transperancy on data and models/analysis) with plots and data analysis report which can be helpful in reducing the hypothesis to insights cycle time in a ML experiment
 
 Altough a lot of cloud providers provide this option and sometimes it may not be worth using it, and even costlier.  While It's simpler over CLI.
 
@@ -15,7 +15,7 @@ The analysis part run on a jupyter notebook which can be changed as required eas
 
 
 
-## Linear Regression :octocat:
+## Linear Regression <!-- :octocat: -->
 Regression Module is a supervised machine learning module that is used for estimating the relationships between a dependent variable (often called the ‘outcome variable’, or ‘target’) and one or more independent variables (often called ‘features’, ‘predictors’, or ‘covariates’). The objective of regression is to predict continuous values such as predicting sales amount, predicting quantity, predicting temperature etc. This supports several pre-processing features that prepare the data for modeling through CLI just by clicking. It has over 25 ready-to-use algorithms and several plots to analyze the performance of trained models.
 > Option to run on default configuration (docs :soon:).  
 
@@ -44,7 +44,7 @@ Regression Module is a supervised machine learning module that is used for estim
 > Pickling model for re-use.
 
 
-## Classification :octocat:
+## Binary classification <!-- :octocat: -->
 Classification Module is a supervised machine learning module which is used for classifying elements into groups. The goal is to predict the categorical class labels which are discrete and unordered. Some common use cases include predicting customer default (Yes or No), predicting customer churn (customer will leave or stay), disease found (positive or negative). This module can be used for binary and provides several pre-processing features that prepare the data for modeling through CLI. It has over 18 ready-to-use algorithms and several plots to analyze the performance of trained models.
 
 > Option to run on customized preprocessing configurations (docs :soon:).  
@@ -127,12 +127,16 @@ pip install -r requirements.txt
 python3 auto_regression/main.py
 ```
 
-TODOs and Planned work : 
-- [x] Classification
+TODOs and completed work : 
+- [x] Binary Classification
 - [x] Regression
+- [x] Interactive CLI configuration
+- [x] HTML Reporting
 - [ ] Clustering
 - [ ] Blending model
 - [ ] Stacking model
+- [x] Ensemble Classification model (Baggin and Boosting)
+- [ ] Ensemble Regression model (Baggin and Boosting)
 - [ ] Multiple(best) model creations
 - [ ] HTML report remediation
 - [ ] Dockerization
@@ -140,8 +144,8 @@ TODOs and Planned work :
 - [ ] Documentation
 - [ ] Support different file types
 - [ ] Unit tests
-- [ ] Documentation
+- [ ] Multiclass Classification
 
 
-## Contributions and ideas are welcome.
+#### :octocat: Contributions and ideas are welcome.
 
