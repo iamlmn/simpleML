@@ -1,5 +1,5 @@
 Kfolds: 10
-analysis_name: my-regression
+analysis_name: my-cclassificatio-demo
 analysis_type: BinaryClassification
 auto_select_best_model_by: Accuracy
 auto_tune: true

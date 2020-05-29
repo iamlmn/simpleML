@@ -72,7 +72,7 @@ if __name__ == '__main__':
         # Start regression
         if answers_modeling['StartModelling']:
             try:
-                run_regression.run_notebook(sys.argv, _ipynb_filename, default_cell_timeout = 600)
+                run_regression.run_notebook(sys.argv, _ipynb_filename, default_cell_timeout = 900)
             except Exception as e:
                 rasie(e)
 

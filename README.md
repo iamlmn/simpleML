@@ -1,5 +1,5 @@
 # simpleML
-
+:soon:
 Simple ML is python based machcine learning tool wrapped over PyCaret.
 
 Aim is to attain no code ML training while still having the ability to use multiple technique/model/paramets has been used with just few clicks with neat HTML reports(transperancy and) with plots and reduce the hypothesis to insights cycle time in a ML experiment
@@ -18,7 +18,13 @@ Regression Module is a supervised machine learning module that is used for estim
 
 > Option for auto hyperparameter tuning based on random grid search.
 
-> Creates a details HTML report with residual plots, Feature importance plot, Prediction Error plot, Learning Curve plot, Cooks Distance Plot, Validation Curve Plot
+> Creates a details HTML report with :
+- residual plots
+- Feature importance plot
+- Prediction Error plot 
+- Learning Curve plot 
+- Cooks Distance Plot 
+- Validation Curve Plot
 
 > SHAP plots for SHapley Additive exPlanations
 
@@ -26,32 +32,39 @@ Regression Module is a supervised machine learning module that is used for estim
 
 
 ## Classification
-Classification Module is a supervised machine learning module which is used for classifying elements into groups. The goal is to predict the categorical class labels which are discrete and unordered. Some common use cases include predicting customer default (Yes or No), predicting customer churn (customer will leave or stay), disease found (positive or negative). This module can be used for binary and provides several pre-processing features that prepare the data for modeling through setup function. It has over 18 ready-to-use algorithms and several plots to analyze the performance of trained models.
+Classification Module is a supervised machine learning module which is used for classifying elements into groups. The goal is to predict the categorical class labels which are discrete and unordered. Some common use cases include predicting customer default (Yes or No), predicting customer churn (customer will leave or stay), disease found (positive or negative). This module can be used for binary and provides several pre-processing features that prepare the data for modeling through CLI. It has over 18 ready-to-use algorithms and several plots to analyze the performance of trained models.
 
-> Option to run on default preprocessing configuration (need docs but can refer to PyCaret docs for now).  
+> Option to run on customized preprocessing configurations (docs :soon:).  
 
 > Provides preprocessing configuration for EDA & making data ready.
 
-> Runs 18 classification and comapres the 'Accuracy', 'AUC', 'Recall', 'Precision', 'F1', 'Kappa' merics and provides the best model, but still users have an option to override and run their model of interest.
+> Runs 18 classification and comapres the 
+- 'Accuracy'
+- 'AUC'
+- 'Recall'
+- 'Precision'
+- 'F1'
+- 'Kappa' 
+	merics and provides the best model, but still users have an option to override and run their model of interest.
 
 > Option for auto tune hyperparameters based on random grid search.
 
 > Creates a details HTML report with 
-	- Area Under the Curve, 
-	- Discrimination Threshold, 
-	-	Precision Recall Curve, 
-	-	Confusion Matrix, 
-	-	Class Prediction Error
-	-	Classification Report
-	-	Decision Boundary
-	-	Recursive Feature Selection
-	-	Learning Curve
-	-	Manifold Learning
-	-	Calibration Curve
-	-	Validation Curve
-	-	Dimension Learning
-	-	Feature Importance
-	-	Model Hyperparameter
+- Area Under the Curve
+- Discrimination Threshold
+- Precision Recall Curve
+- Confusion Matrix
+- Class Prediction Error
+- Classification Report
+- Decision Boundary
+- Recursive Feature Selection
+- Learning Curve
+- Manifold Learning
+- Calibration Curve
+- Validation Curve
+- Dimension Learning
+- Feature Importance
+- Model Hyperparameter
 
 > SHAP plots for SHapley Additive exPlanations
 
@@ -59,20 +72,34 @@ Classification Module is a supervised machine learning module which is used for 
 
 
 
-Sample runs as of (28thMay2020)
-<h3>Running Linear regression with Default configuration on boston dataset</h3>
+<h2>Sample demos as of (30thMay2020)</h2>
+<h5> Configuring Linear regression with default configuration on boston dataset</h5> 
 <!-- ![](assets/regression/default_regression.gif) -->
 <video width="320" height="240" controls>
   <source src="assets/lr-all.mp4" type="video/mp4">
 </video>
 
-<h3>Running Linear regression customized preprocessing configurations</h3>
+<h5>Configuring Linear regression with customized preprocessing</h5>
 <!-- ![](assets/regression/preprocessing.gif) -->
 
 <video width="320" height="240" controls>
   <source src="assets/video.mov" type="video/mp4">
 </video>
 
+<h5>Configuring Binarry Classification with default preprocessing configurations on Credir card dataset </h5>
+<!-- ![](assets/regression/preprocessing.gif) -->
+
+<video width="320" height="240" controls>
+  <source src="assets/Classification.mov" type="video/mp4">
+</video>
+
+
+<h5>Configuring Binarry Classification with default preprocessing configurations on Credir card dataset </h5>
+<!-- ![](assets/regression/preprocessing.gif) -->
+
+<video width="320" height="240" controls>
+  <source src="assets/classificaiton_report.mov" type="video/mp4">
+</video>
 
 
 <!-- ![View sample HTML report on Boston data](assets/regression/regression.html) -->

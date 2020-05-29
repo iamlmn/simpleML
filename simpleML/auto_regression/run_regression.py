@@ -3,7 +3,7 @@
 
 import sys
 import os
-IPYNB_FILENAME = 'regression.ipynb'
+
 CONFIG_FILENAME = '.config_ipynb'
 
 
