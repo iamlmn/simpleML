@@ -60,18 +60,26 @@ Classification Module is a supervised machine learning module which is used for 
 
 
 Sample runs as of (28thMay2020)
-### Running Linear regression with Default configuration on boston dataset
-![](assets/regression/default_regression.gif)
+<h3>Running Linear regression with Default configuration on boston dataset</h3>
+<!-- ![](assets/regression/default_regression.gif) -->
+<video width="320" height="240" controls>
+  <source src="assets/lr-all.mp4" type="video/mp4">
+</video>
 
-### Running Linear regression customized preprocessing configurations
-![](assets/regression/preprocessing.gif)
-
-<!-- ![View sample HTML report on Boston data](assets/regression/regression.html) -->
-
+<h3>Running Linear regression customized preprocessing configurations</h3>
+<!-- ![](assets/regression/preprocessing.gif) -->
 
 <video width="320" height="240" controls>
   <source src="assets/video.mov" type="video/mp4">
 </video>
+
+
+
+<!-- ![View sample HTML report on Boston data](assets/regression/regression.html) -->
+
+
+
+
 
 ### Install & run
 ```
