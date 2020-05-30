@@ -14,9 +14,9 @@ def run_notebook(argv, ipynb_filename, default_cell_timeout=600, _ip = '0.0.0.0'
     
     
     os.system(
-        'jupyter nbconvert --execute {:s} --to html --TemplateExporter.exclude_input=True --ExecutePreprocessor.timeout={} --ip {} --port {} --no-browser --allow-root'.format(
+        'jupyter nbconvert --execute {:s} --to html --TemplateExporter.exclude_input=True --ExecutePreprocessor.timeout={}'.format(
             ipynb_filename,
-            default_cell_timeout), _ip, _port)
+            default_cell_timeout))
 
     return None
 
