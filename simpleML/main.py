@@ -1,6 +1,6 @@
 """
 Usage:
-    main.py -it [--configspec=<path--yaml-config-file>] [--default_cell_timeout=<time in second>]
+    main.py [--configspec=<path--yaml-config-file>] [--default_cell_timeout=<time in second>]
     main.py -h|--help
     main.py -v|--version
 Options:
@@ -38,8 +38,8 @@ style = style_from_dict({
 
 
 if __name__ == '__main__':
-    arguments = docopt(__doc__, version='Allelysis 1.0')
-    if arguments['-it']:
+    arguments = docopt(__doc__, version='SimpleML 1.0')
+    if True:
         if '--default_cell_timeout' in arguments:
             _default_cell_timeout = arguments['--default_cell_timeout']
         else:
