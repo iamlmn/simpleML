@@ -25,7 +25,8 @@ WORKDIR /home/simpleML/
 COPY requirements.txt /home/simpleML/requirements.txt
 RUN pip3 install -r requirements.txt
 #RUN pip3 install scikit-learn auto-sklearn pandas matplotlib numpy
-# Copy MIDI Files
+# Copy Files & Packages
+COPY packages/ /home/simpleML/packages
 COPY simpleML/ /home/simpleML/
 
 # Set Python3 as default python version

@@ -136,7 +136,7 @@ TODOs and completed work :
 - [ ] Ensemble Regression model (Baggin and Boosting)
 - [ ] Multiple(best) model creations
 - [ ] HTML report remediation
-- [ ] Dockerization
+- [ ] Dockerization - Currently wokring on it
 - [ ] Convert it to an executable
 - [ ] Documentation
 - [ ] Support different file types
@@ -144,5 +144,4 @@ TODOs and completed work :
 - [ ] Multiclass Classification
 
 
-#### :octocat: Contributions and ideas are welcome.
-
+#### :octocat: Contributions and ideas are welcome.s
