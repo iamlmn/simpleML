@@ -7,7 +7,7 @@ PyInquirer
 termcolor
 pyfiglet
 docopt
-notebook==5.2.0
+notebook==6.4.12
 ipykernel==4.6.1
 nbformat==4.4.0
 nbconvert==5.3.1
